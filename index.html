@@ -4,7 +4,8 @@
       // Your Client ID can be retrieved from your project in the Google
       // Developer Console, https://console.developers.google.com
       var CLIENT_ID = '392486285151-orp1vjialfqdp7on55edmdafv9j2ubhg.apps.googleusercontent.com';
-      var SCOPES = ['https://www.googleapis.com/auth/drive'];
+      var SCOPES = ['https://www.googleapis.com/auth/drive',
+     		    'https://www.googleapis.com/auth/spreadsheets'];
 
       /**
        * Check if current user has authorized this application.
@@ -53,7 +54,7 @@
        * root Drive folder.
        */
       function callScriptFunction() {
-        var scriptId = "1Ld0vuFKUE8lQ9colBxxfNoMN38y39oIMB9QBBgfx-cbgj0pyiYyWctqV";
+        var scriptId = "MJl1l4-u38SdaMIkgkzYpvKCCDyTxTj11";
 
         // Make the API request.
         var op = gapi.client.request({
